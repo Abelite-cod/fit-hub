@@ -28,13 +28,17 @@ export default function GalleryPage() {
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft' && lightboxIndex !== null) prevImage();
-      if (e.key === 'ArrowRight' && lightboxIndex !== null) nextImage();
+      if (e.key === 'Escape') {
+        setLightboxIndex(null);
+      } else if (e.key === 'ArrowLeft') {
+        setLightboxIndex((prev) => prev === null ? null : (prev - 1 + filtered.length) % filtered.length);
+      } else if (e.key === 'ArrowRight') {
+        setLightboxIndex((prev) => prev === null ? null : (prev + 1) % filtered.length);
+      }
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [lightboxIndex]);
+  }, [filtered.length]);
 
   return (
     <>

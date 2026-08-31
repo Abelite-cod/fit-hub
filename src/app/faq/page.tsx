@@ -25,7 +25,7 @@ export default function FaqPage() {
           <p className="label-text mb-4">AZ FITNESS</p>
           <h1 className="heading-xl text-az-offwhite mb-6 max-w-2xl">FREQUENTLY ASKED QUESTIONS.</h1>
           <p className="body-lg text-az-offwhite/70 max-w-xl">
-            Everything you need to know about training at AZ Fitness. Can't find your answer? Get in touch.
+            Everything you need to know about training at AZ Fitness. Can&apos;t find your answer? Get in touch.
           </p>
         </div>
       </section>
@@ -91,7 +91,7 @@ export default function FaqPage() {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
             <div>
               <h2 className="heading-md text-az-offwhite mb-2">STILL HAVE QUESTIONS?</h2>
-              <p className="text-az-offwhite/60 text-sm">Get in touch and we'll answer whatever you need to know.</p>
+              <p className="text-az-offwhite/60 text-sm">Get in touch and we&apos;ll answer whatever you need to know.</p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
               <Link href="/contact" className="inline-flex items-center justify-center bg-az-green text-white text-xs font-semibold tracking-widest uppercase px-6 py-3 hover:bg-az-black transition-colors">

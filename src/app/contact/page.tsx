@@ -147,7 +147,7 @@ export default function ContactPage() {
                   </div>
                   <h2 className="heading-md text-az-offwhite mb-4">MESSAGE SENT.</h2>
                   <p className="text-az-offwhite/60 leading-relaxed max-w-sm mx-auto">
-                    Thanks, {form.name}. We've received your message and will get back to you shortly.
+                    Thanks, {form.name}. We&apos;ve received your message and will get back to you shortly.
                   </p>
                 </div>
               ) : (
