@@ -46,7 +46,7 @@ export default function HomePage() {
             '@context': 'https://schema.org',
             '@type': 'HealthClub',
             name: 'AZ Fitness',
-            description: 'A luxurious gym in Ile-Ife, Osun State, Nigeria. Strength training, boxing, personal training, group classes, tennis, and nutrition guidance.',
+            description: 'A fitness centre in Ile-Ife, Osun State, Nigeria. Strength training, boxing, personal training, group classes, tennis, and nutrition guidance.',
             url: 'https://azfitness.example',
             telephone: '+234XXXXXXXXXX',
             email: 'contact@azfitness.example',
@@ -116,7 +116,7 @@ export default function HomePage() {
               <span className="text-az-green">Purpose.</span>
             </h1>
             <p className="body-lg text-az-offwhite/70 max-w-xl mb-10">
-              AZ Fitness is a serious gym built for people who want to train properly, stay
+              AZ Fitness is a fitness empire built for people who want to train properly, stay
               consistent, and see real results. Strength, boxing, personal coaching, and more —
               all in one place.
             </p>
@@ -194,7 +194,7 @@ export default function HomePage() {
             <div>
               <SectionHeading
                 label="About AZ Fitness"
-                title="A Gym Built for Serious Training"
+                title="A Gym Built for your Excercising & Training"
                 subtitle="AZ Fitness is located in Ile-Ife, Osun State, Nigeria. We exist for one reason — to give you the environment, equipment, and guidance to train properly and see results."
               />
               <div className="space-y-4 mb-8">

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     template: '%s | AZ Fitness',
   },
   description:
-    'AZ Fitness — a serious gym in Ile-Ife, Osun State, Nigeria. Strength training, boxing, personal training, group classes, and nutrition guidance.',
+    'AZ Fitness — a fitness empire in Ile-Ife, Osun State, Nigeria. Strength training, boxing, personal training, group classes, and nutrition guidance.',
   keywords: [
     'gym',
     'fitness',
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     siteName: 'AZ Fitness',
     title: 'AZ Fitness | Ile-Ife, Osun State Nigeria',
     description:
-      'A serious gym in Ile-Ife, Osun State, Nigeria. Strength training, boxing, personal training, and more.',
+      'A fitness empire in Ile-Ife, Osun State, Nigeria. Strength training, boxing, personal training, and more.',
   },
 };
 
