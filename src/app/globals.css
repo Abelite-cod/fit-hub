@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-az-black text-az-offwhite font-sans antialiased;
+  }
+  ::selection {
+    @apply bg-az-green text-white;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-az-green;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply px-4 sm:px-6 lg:px-8 xl:px-12;
+  }
+  .container-wide {
+    @apply max-w-7xl mx-auto;
+  }
+  .heading-xl {
+    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-black tracking-tight leading-none uppercase;
+  }
+  .heading-lg {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight leading-none uppercase;
+  }
+  .heading-md {
+    @apply text-2xl sm:text-3xl font-bold tracking-tight uppercase;
+  }
+  .heading-sm {
+    @apply text-xl sm:text-2xl font-bold tracking-tight uppercase;
+  }
+  .label-text {
+    @apply text-xs font-semibold tracking-widest uppercase text-az-green;
+  }
+  .body-lg {
+    @apply text-base sm:text-lg leading-relaxed;
+  }
+  .body-md {
+    @apply text-sm sm:text-base leading-relaxed;
+  }
+  .fade-up {
+    @apply opacity-0 translate-y-6 transition-all duration-700 ease-out;
+  }
+  .fade-up.visible {
+    @apply opacity-100 translate-y-0;
+  }
+}
