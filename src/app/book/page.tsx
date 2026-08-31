@@ -52,7 +52,7 @@ export default function BookPage() {
           </div>
           <h1 className="heading-lg text-az-offwhite mb-4">ENQUIRY RECEIVED.</h1>
           <p className="text-az-offwhite/70 mb-4 max-w-sm mx-auto leading-relaxed">
-            Thanks, {form.name}. Your enquiry has been received. We'll be in touch with you shortly.
+            Thanks, {form.name}. Your enquiry has been received. We&apos;ll be in touch with you shortly.
           </p>
           {form.service && (
             <p className="text-az-offwhite/40 text-sm mb-10">Service: <span className="text-az-offwhite/60">{form.service}</span></p>
@@ -76,7 +76,7 @@ export default function BookPage() {
           <p className="label-text mb-4">AZ FITNESS</p>
           <h1 className="heading-xl text-az-offwhite mb-6 max-w-2xl">BOOK OR ENQUIRE.</h1>
           <p className="body-lg text-az-offwhite/70 max-w-xl">
-            Ready to join, ask about a service, or book a session? Fill in the form and we'll get back to you.
+            Ready to join, ask about a service, or book a session? Fill in the form and we&apos;ll get back to you.
           </p>
         </div>
       </section>
@@ -91,9 +91,9 @@ export default function BookPage() {
                 <p className="label-text mb-4">WHAT TO EXPECT</p>
                 <ul className="space-y-4">
                   {[
-                    { icon: MessageSquare, text: 'Fill in the form with your details and what you\'re interested in.' },
-                    { icon: Phone, text: 'We\'ll reach out to you by phone or WhatsApp within 24 hours.' },
-                    { icon: Calendar, text: 'We\'ll confirm your session, visit, or answer your question.' },
+                    { icon: MessageSquare, text: "Fill in the form with your details and what you're interested in." },
+                    { icon: Phone, text: "We'll reach out to you by phone or WhatsApp within 24 hours." },
+                    { icon: Calendar, text: "We'll confirm your session, visit, or answer your question." },
                     { icon: User, text: 'Show up and train.' },
                   ].map(({ icon: Icon, text }, i) => (
                     <li key={i} className="flex items-start gap-3">

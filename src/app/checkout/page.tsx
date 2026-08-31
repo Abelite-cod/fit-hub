@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Check, ShoppingBag } from 'lucide-react';
 import { useCartStore } from '@/store/cartStore';
@@ -180,7 +181,7 @@ export default function CheckoutPage() {
                 {items.map((item) => (
                   <div key={`${item.product.id}-${item.selectedSize}`} className="flex gap-3">
                     <div className="relative w-14 h-16 bg-az-black flex-shrink-0">
-                      <img src={item.product.images[0]} alt={item.product.name} className="w-full h-full object-cover" />
+                      <Image src={item.product.images[0]} alt={item.product.name} fill className="object-cover" sizes="56px" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-xs font-medium text-az-offwhite leading-snug truncate">{item.product.name}</p>
