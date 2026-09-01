@@ -398,7 +398,7 @@ export default function HomePage() {
           </div>
 
           <p className="text-center text-az-offwhite/40 text-sm mt-8">
-            Prices shown are placeholders. Contact us for current membership rates.
+            Contact us for more information on membership rates.
           </p>
         </div>
       </section>

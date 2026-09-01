@@ -7,7 +7,7 @@ import { faqs } from '@/data/faqs';
 
 export const metadata: Metadata = {
   title: 'Memberships',
-  description: 'Choose the AZ Fitness membership that suits your goals. Starter, Performance, and Annual plans available in Ile-Ife, Osun State.',
+  description: 'Choose the AZ Fitness membership that suits your goals. Normal, Personal-Training, and VIP plans available in Ile-Ife, Osun State.',
 };
 
 export default function MembershipsPage() {
@@ -83,33 +83,33 @@ export default function MembershipsPage() {
               <thead>
                 <tr className="border-b border-white/10">
                   <th className="text-left py-4 pr-8 text-az-offwhite/50 text-sm font-medium w-1/2">Feature</th>
-                  <th className="text-center py-4 px-4 text-az-offwhite text-sm font-bold uppercase">Starter</th>
-                  <th className="text-center py-4 px-4 text-az-green text-sm font-bold uppercase">Performance</th>
-                  <th className="text-center py-4 px-4 text-az-offwhite text-sm font-bold uppercase">Annual</th>
+                  <th className="text-center py-4 px-4 text-az-green text-sm font-bold uppercase">Normal</th>
+                  <th className="text-center py-4 px-4 text-az-offwhite text-sm font-bold uppercase">PersonalTraining</th>
+                  <th className="text-center py-4 px-4 text-az-offwhite text-sm font-bold uppercase">VIP</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { feature: 'Full gym floor access', starter: true, performance: true, annual: true },
-                  { feature: 'Group training classes', starter: true, performance: true, annual: true },
-                  { feature: 'Tennis court (recreational)', starter: true, performance: true, annual: true },
-                  { feature: 'Personal training session', starter: false, performance: '1x/month', annual: '2x/month' },
-                  { feature: 'Nutritional guidance', starter: false, performance: true, annual: true },
-                  { feature: 'Full nutrition programme', starter: false, performance: false, annual: true },
-                  { feature: 'Guest passes', starter: false, performance: false, annual: '2/month' },
-                  { feature: 'Gym wear discount', starter: false, performance: true, annual: true },
-                  { feature: 'Priority class booking', starter: false, performance: true, annual: true },
+                  { feature: 'Full gym floor access', Normal: true, PersonalTraining: true, VIP: true },
+                  { feature: 'Group training classes', Normal: true, PersonalTraining: true, VIP: true },
+                  { feature: 'Tennis court (recreational)', Normal: true, PersonalTraining: true, VIP: true },
+                  { feature: 'Personal training session', Normal: false, PersonalTraining: '1x/month', VIP: '2x/month' },
+                  { feature: 'Nutritional guidance', Normal: false, PersonalTraining: true, VIP: true },
+                  { feature: 'Full nutrition programme', Normal: false, PersonalTraining: false, VIP: true },
+                  { feature: 'Guest passes', Normal: false, PersonalTraining: false, VIP: '2/month' },
+                  { feature: 'Gym wear discount', Normal: false, PersonalTraining: true, VIP: true },
+                  { feature: 'Priority class booking', Normal: false, PersonalTraining: true, VIP: true },
                 ].map((row, i) => (
                   <tr key={i} className="border-b border-white/5 hover:bg-white/5">
                     <td className="py-4 pr-8 text-sm text-az-offwhite/70">{row.feature}</td>
-                    {(['starter', 'performance', 'annual'] as const).map((col) => (
+                    {(['Normal', 'PersonalTraining', 'VIP'] as const).map((col) => (
                       <td key={col} className="text-center py-4 px-4">
                         {row[col] === true ? (
-                          <Check size={16} className={`mx-auto ${col === 'performance' ? 'text-az-green' : 'text-az-offwhite/60'}`} />
+                          <Check size={16} className={`mx-auto ${col === 'Normal' ? 'text-az-green' : 'text-az-offwhite/60'}`} />
                         ) : row[col] === false ? (
                           <span className="text-az-offwhite/20 text-lg">—</span>
                         ) : (
-                          <span className={`text-xs font-medium ${col === 'performance' ? 'text-az-green' : 'text-az-offwhite/70'}`}>{row[col]}</span>
+                          <span className={`text-xs font-medium ${col === 'Normal' ? 'text-az-green' : 'text-az-offwhite/70'}`}>{row[col]}</span>
                         )}
                       </td>
                     ))}
